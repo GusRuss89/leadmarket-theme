@@ -1,0 +1,80 @@
+.lm-lead-snippet {
+    @extend .cf;
+    background: #FFF;
+    box-shadow: 0 0 3px rgba(0,0,0,0.15);
+    position: relative;
+}
+.lm-lead-snippet--body {
+    padding: 16px;
+    min-height: 130px;
+}
+.lm-lead-snippet--header {
+    margin-bottom: 12px;
+}
+.lm-lead-snippet--title {
+    @include font-size(18);
+    margin-bottom: 4px;
+    a {
+        color: $heading-colour;
+    }
+}
+.lm-lead-snippet--subtitle {
+    margin-bottom: 0;
+    color: $light-text-colour;
+}
+.lm-lead-snippet--subtitle-item {
+    display: inline-block;
+    margin-right: 8px;
+}
+.lm-lead-snippet--excerpt {
+    margin-bottom: 12px;
+    p {
+        margin: 0;
+    }
+}
+.lm-lead-snippet--permalink {
+
+}
+.lm-lead-snippet--sensitive {
+    padding: 16px;
+    background: $light-grey;
+    text-align: center;
+}
+.lm-lead-snippet--sensitive__bought {
+    background: $light-green;
+}
+.lm-lead-snippet--sensitive__buy {
+    background: $light-yellow;
+}
+.lm-lead-snippet--buy-label {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    display: block;
+}
+.lm-lead-snippet--buy-price {
+    color: $heading-colour;
+    font-size: 1.6em;
+    font-weight: bold;
+    display: block;
+    line-height: 1;
+}
+.lm-lead-snippet--buy-btn {
+    margin-top: 10px;
+}
+@include at-least($bp-m) {
+    .lm-lead-snippet--body {
+        margin-right: 26%;
+    }
+    .lm-lead-snippet--sensitive {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 26%;
+        height: 100%;
+    }
+    .lm-lead-snippet--sensitive-content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

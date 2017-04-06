@@ -1,0 +1,17 @@
+.banner {
+	@extend .cf;
+	padding: 16px 20px;
+	background: $darkest-grey;
+}
+.banner--logo {
+	float: left;
+	color: #FFF;
+	font-weight: bold;
+	@include font-size($base-font-size + 2);
+	&:hover {
+		color: #FFF;
+	}
+}
+.banner--nav {
+	float: right;
+}

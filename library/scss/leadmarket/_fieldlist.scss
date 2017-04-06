@@ -1,0 +1,30 @@
+.lm-uldl {
+    @extend %reset-list;
+    li {
+        display: block;
+        margin-bottom: 8px;
+    }
+    dl {
+        @extend .cf;
+        margin: 0;
+    }
+    dt {
+        display: block;
+        font-weight: bold;
+    }
+    dd {
+        display: block;
+    }
+}
+@include at-least($bp-l) {
+    .lm-uldl__twocol {
+        li {
+            vertical-align: top;
+            display: inline-block;
+            width: 45%;
+            &:nth-child(even) {
+                margin-left: 3%;
+            }
+        }
+    }
+}

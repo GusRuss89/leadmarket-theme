@@ -1,0 +1,59 @@
+/**
+ * This should be a good starting point
+ * for however you want your buttons to look.
+ * Feel free to change what you like.
+ */
+
+// To preserve vertical rhythm, buttons should be placed in a <p> tag, or in a <div class="flow">
+.btn,
+input.btn,
+.lm-btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.75em 1.5em;
+	border-radius: $border-radius;
+	background: $brand-colour;
+	border: none;
+	font-family: $alt-font;
+	font-weight: bold;
+	text-transform: uppercase;
+	@include font-size($base-font-size - 2);
+	color: #FFF; // For inputs
+	cursor: pointer; // Also for inputs
+	line-height: $relative-line-height; // Inputs again
+	-webkit-font-smoothing: antialiased; // Again, inputs
+	transition: background .2s ease;
+	&:link,
+	&:visited {
+		color: #FFF; // Repeated here to override body link colours
+	}
+	&:hover,
+	&:active {
+		background: darken($brand-colour, 5%);
+		text-decoration: none;
+	}
+	&:active {
+		transform: translateY(1px);
+	}
+}
+
+// Secondary
+.btn__secondary {
+	padding: 0.5em 1em;
+    background: darken($light-grey, 10%);
+    color: $heading-colour;
+    &:hover,
+    &:active {
+        background: darken($light-grey, 20%);
+    }
+}
+
+// Button sizes
+.btn__small,
+.lm-btn__small {
+	@include font-size($base-font-size - 4);
+}
+.btn__large,
+.lm-btn__large {
+	@include font-size($base-font-size + 2);
+}

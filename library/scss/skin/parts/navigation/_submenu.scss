@@ -1,0 +1,22 @@
+.article--subnav {
+	float: right;
+}
+.article--submenu {
+	@extend %reset-list;
+	margin-top: 16px;
+	> li {
+		> a {
+			display: none;
+		}
+	}
+	ul {
+		@extend %reset-list;
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		display: inline-block;
+		margin-left: 16px;
+	}
+}

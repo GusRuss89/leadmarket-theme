@@ -1,0 +1,19 @@
+/* 
+<ul class="nav">
+    <li><a>Link</a></li>
+</ul>
+*/
+.nav {
+    @extend %reset-list;
+    @extend .cf;
+
+    > li {
+
+        &,
+        > a {
+            display:inline-block;
+            *display:inline;
+            zoom:1;
+        }
+    }
+}

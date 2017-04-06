@@ -1,0 +1,15 @@
+.main-menu {
+    li {
+        display: inline-block;
+    }
+    a {
+        color: #FFF;
+        display: inline-block;
+        margin-left: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+    }
+    ul {
+        display: none;
+    }
+}

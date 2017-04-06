@@ -1,0 +1,118 @@
+// Form rhythm
+.lm-form--item {
+    margin-bottom: 22px;
+}
+.lm-form--label,
+.lm-form--description,
+.lm-form--input,
+.lm-form--checkboxes,
+.lm-form--error-msg {
+    margin: 5px 0;
+}
+.lm-form--checkbox-item {
+    margin-bottom: 5px;
+}
+
+// Form grid
+.lm-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -16px;
+}
+.lm-form--item {
+    width: 100%;
+    padding-left: 16px;
+}
+[class*="lm-form--item__s-"],
+[class*="lm-form--item__m-"],
+[class*="lm-form--item__l-"] {
+    //flex: 1;
+}
+.lm-form--item__s-one-half { width: 50%; }
+.lm-form--item__s-one-third { width: 33.333%; }
+.lm-form--item__s-two-thirds { width: 66.666%; }
+.lm-form--item__s-one-third { width: 33.333%; }
+.lm-form--item__s-one-quarter { width: 25%; }
+.lm-form--item__s-two-quarters { width: 50%; }
+.lm-form--item__s-three-quarters { width: 75%; }
+@include at-least($bp-s) {
+    .lm-form--item__m-one-half { width: 50%; }
+    .lm-form--item__m-one-third { width: 33.333%; }
+    .lm-form--item__m-two-thirds { width: 66.666%; }
+    .lm-form--item__m-one-third { width: 33.333%; }
+    .lm-form--item__m-one-quarter { width: 25%; }
+    .lm-form--item__m-two-quarters { width: 50%; }
+    .lm-form--item__m-three-quarters { width: 75%; }
+}
+@include at-least($bp-m) {
+    .lm-form--item__l-one-half { width: 50%; }
+    .lm-form--item__l-one-third { width: 33.333%; }
+    .lm-form--item__l-two-thirds { width: 66.666%; }
+    .lm-form--item__l-one-third { width: 33.333%; }
+    .lm-form--item__l-one-quarter { width: 25%; }
+    .lm-form--item__l-two-quarters { width: 50%; }
+    .lm-form--item__l-three-quarters { width: 75%; }
+}
+
+// Other form stuff
+.lm-form {
+    
+}
+.lm-form--item {
+    
+}
+.lm-form--label {
+    color: $heading-colour;
+    font-weight: bold;
+    display: block;
+}
+.lm-form--asterix {
+    color: $status-red;
+}
+.lm-form--description {
+    display: block;
+}
+
+// Input types
+.lm-form--input {
+
+}
+.lm-form--input__select {
+
+}
+.lm-form--input__textarea {
+
+}
+.lm-form--input__text {
+
+}
+
+// Checkboxes
+.lm-form--checkboxes {
+
+}
+.lm-form--checkbox-item {
+    @extend .cf;
+    input {
+        float: left;
+        margin-right: 10px;
+        margin-top: 0.3em;
+    }
+    label {
+        overflow: hidden;
+    }
+}
+
+// Errors
+.lm-form--error-msg {
+    color: $status-red;
+}
+
+// Footer / button
+.lm-form--footer {
+
+}
+.lm-form--btn {
+
+}

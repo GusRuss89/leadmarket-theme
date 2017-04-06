@@ -1,0 +1,18 @@
+/**
+ * A starting point for your pagination
+ */
+.pagination {
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+	ol {
+		@extend .nav;
+		display: inline-block;
+		width: auto;
+	}
+	li {
+		display: inline-block;
+		padding: 0 4px;
+
+	}
+}

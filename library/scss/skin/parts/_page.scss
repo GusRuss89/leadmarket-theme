@@ -1,0 +1,21 @@
+.main-layer {
+    margin-top: 3em;
+}
+.article {
+
+}
+.article--header {
+    @extend .cf;
+    border-bottom: 2px solid $border-colour;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+}
+.article--title {
+    margin: 0;
+    float: left;
+}
+.article--subtitle {
+    clear: both;
+    color: $light-text-colour;
+    margin: 5px 0 0;
+}

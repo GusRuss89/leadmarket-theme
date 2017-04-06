@@ -1,0 +1,28 @@
+/**
+ * Elements are reusable things like wells,
+ * horizontal rules, callout boxes, accordions/togglers,
+ * progress bars or anything that you'll use more than once in your site.
+ */
+
+// Wells (you'll probably want to change these up a bit)
+.well {
+	padding: $base-line-height + px $base-line-height + px 0;
+	background: $lightest-grey;
+	border: 1px solid $light-grey;
+}
+.well-tight {
+	@extend .well;
+	padding: 5px;
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+
+// Horizontal Rule 
+hr {
+	height: 0;
+	border: 0;
+	border-top: 1px solid $border-colour;
+}
+
+// Go nuts here...

@@ -1,0 +1,17 @@
+/**
+ * A blank slate for your footer styles.
+ */
+
+.footer {
+	@include font-size($base-font-size - 2);
+	position: absolute;
+	//border-top: 1px solid $border-colour;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.footer--content {
+	padding: 10px 0;
+	margin: 0;
+	text-align: center;
+}

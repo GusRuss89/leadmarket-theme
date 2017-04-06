@@ -1,0 +1,43 @@
+.lm-lead {
+
+}
+.lm-lead--header {
+    @extend .article--header;
+}
+.lm-lead--title {
+    @extend .article--title;
+}
+.lm-lead--subtitle {
+    @extend .article--subtitle;
+}
+.lm-lead--body {
+    
+}
+.lm-lead--details {
+    margin-bottom: 2em;
+}
+.lm-lead--content {
+    margin-bottom: 2em;
+}
+.lm-lead--sensitive {
+    background: #FFF;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+}
+.lm-lead--buy {
+    background: $light-yellow;
+    padding: 16px;
+    text-align: center;
+    //margin-bottom: 2em;
+}
+.lm-lead--buy-label {
+    @extend .lm-lead-snippet--buy-label;
+}
+.lm-lead--buy-price {
+    @extend .lm-lead-snippet--buy-price;
+}
+.lm-lead--buy-btn {
+    @extend .lm-lead-snippet--buy-btn;
+}
+.lm-lead--sensitive-content {
+    padding: 16px;
+}

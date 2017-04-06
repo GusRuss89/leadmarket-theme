@@ -1,0 +1,29 @@
+.lm-btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.5em 1.5em;
+	border-radius: $border-radius;
+	background: $dark-grey;
+	border: none;
+	font-family: $alt-font;
+	color: #FFF; // For inputs
+	cursor: pointer; // Also for inputs
+	line-height: $relative-line-height; // Inputs again
+	-webkit-font-smoothing: antialiased; // Again, inputs
+	&:link,
+	&:visited {
+		color: #FFF; // Repeated here to override body link colours
+	}
+	&:hover,
+	&:active {
+		background: $darkest-grey;
+		text-decoration: none;
+	}
+}
+// Button sizes
+.lm-btn__small {
+	@include font-size($base-font-size - 2);
+}
+.lm-btn__large {
+	@include font-size($base-font-size + 4);
+}

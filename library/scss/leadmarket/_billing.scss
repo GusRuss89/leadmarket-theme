@@ -1,0 +1,15 @@
+.lm-balance {
+    background: #FFF;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    padding: 32px 16px;
+    text-align: center;
+}
+.lm-balance--bal {
+    @include font-size(32);
+    font-weight: bold;
+    color: $brand-colour;
+    line-height: 1;
+}
+.lm-balance--label {
+    margin: 8px 0 0;
+}

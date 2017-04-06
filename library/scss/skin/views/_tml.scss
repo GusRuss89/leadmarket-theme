@@ -1,0 +1,30 @@
+// General
+.tml {
+    margin-left: auto;
+    margin-right: auto;
+}
+.tml-register {
+    max-width: 100%;
+}
+.button {
+    @extend .btn;
+}
+.button-secondary {
+    @extend .btn__secondary;
+}
+
+// Login/register etc forms
+.tml-submit-wrap {
+    input[type="submit"] {
+        @extend .btn;
+    }
+}
+
+// Profile form
+.tml-form-table {
+    th,
+    td {
+        border: none;
+        padding: 0 0 6px;
+    }
+}

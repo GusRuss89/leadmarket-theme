@@ -1,0 +1,21 @@
+html{
+    font-size: 62.5%;
+    overflow-y: scroll;
+    min-height: 100%;
+	background: $lightest-grey;
+}
+body {
+	min-height: 100%;
+	font-family: $base-font;
+	font-size: $base-font-size + px;
+	line-height: $relative-line-height;
+	color: $text-colour;
+	background: $lightest-grey;
+	-webkit-font-smoothing: antialiased;
+}
+.site-wrap {
+	min-height: 100vh;
+	padding-bottom: $footer-height + 60px;
+	overflow: hidden; // Stop horizontal scrolling
+	position: relative;
+}

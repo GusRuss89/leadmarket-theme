@@ -1,0 +1,51 @@
+// Hero
+.hero-layer {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+    text-align: center;
+}
+.hero-layer--title {
+    color: #FFF;
+    font-weight: bold;
+    @include font-size(46);
+    text-shadow: 0 0 16px rgba(0,0,0,0.66);
+}
+.hero-layer--subtitle {
+    color: #FFF;
+    @include font-size(27);
+    text-shadow: 0 0 16px rgba(0,0,0,0.66);
+}
+.hero-layer--content {
+    color: #FFF;
+    @include font-size(22);
+    text-shadow: 0 0 16px rgba(0,0,0,0.66);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// How it works
+.hiw-layer {
+    background: $light-grey;
+    padding: 3em 0;
+}
+.hiw-layer--box {
+    
+}
+.hiw-layer--title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.hiw-layer--icon {
+    font-size: 34px;
+    color: $brand-colour;
+}
+
+// Form
+.form-layer {
+    padding: 3em 0;
+    font-size: 17px;
+    background: #FFF;
+}

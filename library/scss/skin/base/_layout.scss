@@ -10,3 +10,7 @@
 	@extend .page-width;
 	max-width: $narrow-page-width;
 }
+.page-width__narrower {
+	@extend .page-width;
+	max-width: 820px;
+}

@@ -2,7 +2,7 @@
 // Media mixin
 @mixin media( $namespace: "" ) {
     .#{$namespace}media {
-		> .media-img {
+		> .media--img {
 		    float: left;
 		    margin-right: $base-line-height + px;
 		    max-width: 25%;
@@ -10,10 +10,10 @@
 	}
 }
 // Common media rules
-.media-img {
+.media--img {
 	margin-bottom: $base-line-height * 0.66 + px;
 }
-.media-body {
+.media--body {
     overflow: hidden;
     @include no-padding-on-last-child();
 }

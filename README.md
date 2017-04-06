@@ -1,2 +1,2 @@
-# leadmarket-theme
+# LeadMarket Theme
 WordPress theme for the LeadMarket plugin

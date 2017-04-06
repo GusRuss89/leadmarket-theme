@@ -44,14 +44,22 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"],
-input[type="file"] {
+input[type="file"],
+textarea {
 	max-width: $field-max-width;
-	padding: 6px 12px;
+	padding: 10px 12px;
+	border: 2px solid $border-colour;
+	transition: border .4s ease;
+	&:focus {
+		border-color: $brand-colour;
+		box-shadow: none;
+	}
 }
 textarea {
-	padding: 6px 12px;
 	height: 120px;
 }
+
+
 
 // === Gravity forms styles, delete if not required === //
 

@@ -31,9 +31,13 @@
 			
 			<header class="banner layer" role="banner">
 
-				<a class="banner--logo" href="<?php echo bloginfo( 'url' ); ?>" rel="nofollow">
+				<a class="banner--logo" href="<?php echo get_page_link( LM_LEADS_PAGE ); ?>" rel="nofollow">
 					<?php echo bloginfo(); ?>
 				</a>
+
+				<nav role="navigation" class="banner--nav">
+					<?php branch_main_menu(); ?>
+				</nav>
 
 			</header>
 

@@ -57,3 +57,9 @@ input.btn,
 .lm-btn__large {
 	@include font-size($base-font-size + 2);
 }
+
+// Loading
+.lm-btn__is-loading {
+	cursor: default;
+	opacity: 0.6;
+}

@@ -1,16 +1,16 @@
 // Form rhythm
 .lm-form--item {
-    margin-bottom: 22px;
+    margin-bottom: 1.7em;
 }
 .lm-form--label,
 .lm-form--description,
 .lm-form--input,
 .lm-form--checkboxes,
 .lm-form--error-msg {
-    margin: 5px 0;
+    margin: 0.4em 0;
 }
 .lm-form--checkbox-item {
-    margin-bottom: 5px;
+    margin-bottom: 0.4em;
 }
 
 // Form grid
@@ -96,7 +96,7 @@
     @extend .cf;
     input {
         float: left;
-        margin-right: 10px;
+        margin-right: 0.66em;
         margin-top: 0.3em;
     }
     label {

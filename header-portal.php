@@ -32,7 +32,7 @@
 			<header class="banner layer" role="banner">
 
 				<a class="banner--logo" href="<?php echo get_page_link( LM_LEADS_PAGE ); ?>" rel="nofollow">
-					<?php echo bloginfo(); ?>
+					<span class="logo"><span class="logo--many">Many</span><span class="logo--quotes">Quotes</span></span>
 				</a>
 
 				<nav role="navigation" class="banner--nav">

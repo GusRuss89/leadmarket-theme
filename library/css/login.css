@@ -5011,6 +5011,11 @@ input.btn:active,
   font-size: 1.7rem;
 }
 
+.lm-btn__is-loading {
+  cursor: default;
+  opacity: 0.6;
+}
+
 /**
  * Elements are reusable things like wells,
  * horizontal rules, callout boxes, accordions/togglers,
@@ -5191,6 +5196,14 @@ hr {
 
 .banner--nav {
   float: right;
+}
+
+.logo--many {
+  font-weight: normal;
+}
+
+.logo--quotes {
+  font-weight: bold;
 }
 
 /**

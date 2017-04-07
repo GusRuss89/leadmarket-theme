@@ -4275,6 +4275,11 @@ input.btn:active,
   font-size: 1.7rem;
 }
 
+.lm-btn__is-loading {
+  cursor: default;
+  opacity: 0.6;
+}
+
 /**
  * Tables. Edit as desired.
  */

@@ -5017,6 +5017,11 @@ input.button:active,
   font-size: 1.7rem;
 }
 
+.lm-btn__is-loading {
+  cursor: default;
+  opacity: 0.6;
+}
+
 /**
  * Elements are reusable things like wells,
  * horizontal rules, callout boxes, accordions/togglers,
@@ -5199,6 +5204,14 @@ hr {
   float: right;
 }
 
+.logo--many {
+  font-weight: normal;
+}
+
+.logo--quotes {
+  font-weight: bold;
+}
+
 /**
  * A blank slate for your footer styles.
  */
@@ -5360,9 +5373,31 @@ hr {
   margin-right: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .hero-layer {
+    padding: 3em 0 2em;
+  }
+  .hero-layer--title {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+  .hero-layer--subtitle {
+    font-size: 23px;
+    font-size: 2.3rem;
+  }
+  .hero-layer--content {
+    font-size: 17px;
+    font-size: 1.7rem;
+  }
+}
+
 .hiw-layer {
   background: #f0f1f3;
-  padding: 3em 0;
+  padding: 3em 0 1em;
+}
+
+.hiw-layer--box {
+  margin-bottom: 2em;
 }
 
 .hiw-layer--title {
@@ -5381,8 +5416,18 @@ hr {
   background: #FFF;
 }
 
+.form-layer h2 {
+  padding-bottom: 1em;
+  border-bottom: 2px solid #c3c7ca;
+}
+
+.form-layer .lm-btn {
+  font-size: 17px;
+  font-size: 1.7rem;
+}
+
 .lm-form--item {
-  margin-bottom: 22px;
+  margin-bottom: 1.7em;
 }
 
 .lm-form--label,
@@ -5390,11 +5435,11 @@ hr {
 .lm-form--input,
 .lm-form--checkboxes,
 .lm-form--error-msg {
-  margin: 5px 0;
+  margin: 0.4em 0;
 }
 
 .lm-form--checkbox-item {
-  margin-bottom: 5px;
+  margin-bottom: 0.4em;
 }
 
 .lm-form {
@@ -5506,7 +5551,7 @@ hr {
 
 .lm-form--checkbox-item input {
   float: left;
-  margin-right: 10px;
+  margin-right: 0.66em;
   margin-top: 0.3em;
 }
 

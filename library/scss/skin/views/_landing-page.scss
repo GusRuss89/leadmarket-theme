@@ -25,14 +25,28 @@
     margin-left: auto;
     margin-right: auto;
 }
+@include less-than($bp-m) {
+    .hero-layer {
+        padding: 3em 0 2em;
+    }
+    .hero-layer--title {
+        @include font-size(30);
+    }
+    .hero-layer--subtitle {
+        @include font-size(23);
+    }
+    .hero-layer--content {
+        @include font-size(17);
+    }
+}
 
 // How it works
 .hiw-layer {
     background: $light-grey;
-    padding: 3em 0;
+    padding: 3em 0 1em;
 }
 .hiw-layer--box {
-    
+    margin-bottom: 2em;
 }
 .hiw-layer--title {
     margin-bottom: 10px;
@@ -48,4 +62,11 @@
     padding: 3em 0;
     font-size: 17px;
     background: #FFF;
+    h2 {
+        padding-bottom: 1em;
+        border-bottom: 2px solid $border-colour;
+    }
+    .lm-btn {
+        @include font-size(17);
+    }
 }

@@ -1,48 +1,29 @@
+<?php // Template name: Portal page ?>
+
 <?php get_header(); ?>
 
-<div class="layer main-layer">
+<div class="layer main-layer" role="main">
 
-	<div class="page-width">
-		<div class="grid sidebar-right">
-			<div class="main-col cf" role="main">
+	<div class="page-width__narrow">
 
-				<article id="post-not-found" class="hentry cf">
+		<div class="article">
 
-					<header class="article-header">
+			<header class="article--header">
 
-						<h1 class="page-title" itemprop="headline">Error – Page Not Found</h1>
-						<p class="sub-title">The page you're looking for doesn't exist.</p>
+				<h1 class="article--title">404 Error - Page Not Found</h1>
 
-					</header> <!-- end article header -->
+			</header>
 
-					<section class="entry-content">
+			<div class="article--body">
+				
+				<p>Sorry, we couldn't find the page you're looking for. It's possible you mis-typed the URL, or clicked on a broken link.</p>
 
-						<p>Sorry, we couldn't find the page you're looking for. It's possible you mis-typed the URL, or clicked on a broken link.</p>
+			</div>
 
-						<p>Here are some things you can try:</p>
-						<ul>
-							<li>Check to make sure you didn't make any spelling mistakes when you typed the URL.</li>
-							<li>Try looking for the page by browsing the menus.</li>
-							<li>Try using the search function below.</li>
-						</ul>
+		</div>
 
-					</section> <!-- end article section -->
+	</div>
 
-					<section class="search">
-						<h2>Search</h2>
-						<?php get_search_form(); ?>
-					</section> <!-- end search section -->
-
-				</article> <!-- end article -->
-
-			</div><!-- .main-col -->
-
-			<?php get_sidebar(); ?>
-
-		</div><!-- .grid -->
-
-	</div><!-- .page-width -->
-
-</div><!-- .main-layer -->
+</div>
 
 <?php get_footer(); ?>

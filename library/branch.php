@@ -34,7 +34,8 @@ function branch_init() {
 
     // enqueue base scripts and styles
     add_action('wp_enqueue_scripts', 'branch_scripts_and_styles', 999);
-    // ie conditional wrapper
+    add_action('wp_head', 'branch_google_analytics' );
+	add_action('wp_footer', 'branch_adwords_conversion_tracking' );
 
     // launching this stuff after theme setup
     branch_theme_support();
@@ -91,6 +92,46 @@ function branch_head_cleanup() {
   add_filter( 'script_loader_src', 'branch_remove_wp_ver_css_js', 9999 );
 
 } /* end branch head cleanup */
+
+function branch_google_analytics() {
+	?>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-96985497-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	<?php
+}
+
+function branch_adwords_conversion_tracking() {
+	// Brisbane rubbish collection quote request thank-you page
+	if( is_page( 2 ) ) { ?>
+		<!-- Google Code for Quotes Requested Conversion Page -->
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 855676952;
+		var google_conversion_language = "en";
+		var google_conversion_format = "3";
+		var google_conversion_color = "ffffff";
+		var google_conversion_label = "jOEJCLzcjXAQmLCCmAM";
+		var google_remarketing_only = false;
+		/* ]]> */
+		</script>
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+		</script>
+		<noscript>
+		<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/855676952/?label=jOEJCLzcjXAQmLCCmAM&amp;guid=ON&amp;script=0"/>
+		</div>
+		</noscript>
+
+	<?php }
+}
 
 // remove WP version from RSS
 function branch_rss_version() { return ''; }
